@@ -10,6 +10,6 @@ install:
     - pip install -r requirements.txt
 
 script:
-    -  coverage run --source='authentication' manage.py test && flake8 && coverage report && coverage html
+    -  coverage run --source='authentication' manage.py test && coverage report && coverage html
 after_success:
     - codecov
